@@ -1,0 +1,57 @@
+This assignment will require the implementation of a number of classes that compose a class hierarchy of employee types that work in a Library.
+
+Description
+
+Create a new project, LastNameFirst05, for this assignment. You will need to define the classes depicted in the class diagram below. All of the classes should contain complete javadoc documentation. All classes should be placed in the edu.washington.ext package.
+
+Assignment5 Class Diagram
+[see diagram image assignment5.png]
+
+
+Each of the classes must minimally comply with the class diagram and the general descriptions below:
+
+Employee
+A simple interface defining all operations that must be available for all employees.
+
+LibraryEmployee
+Library employees have a rate of pay, their current number of hours worked and their current used book sales. A library employees pay is their hourly rate multiplied by the current hours worked.
+
+LibraryAssociate
+Library associates are Library employees who also receive a commission on their used book sales. The commission is a percentage of their current used book sales, individual library associates may receive different percentages of their used book sales in commission.
+
+Librarian
+Librarian's receive their base pay plus a bonus equal to a percentage of the library's total used book sales. All librarians receive the same percentage of their library's sales. Librarian's don't receive separate commission/bonus for their individual used book sales.
+
+Library
+Each Library has one Librarian and a number of employees. A Library's payroll is processed by calculating the pay for, and creating a payroll record for, each employee.
+
+PayrollRecord
+A payroll record simply maintains the employee's name and their pay.
+
+LibraryTest
+A JUnit test that tests the library class directly and the employee classes indirectly. Only the getCurrentUsedBookSales and processPayroll methods need to be tested. The test shall instantiate a library and add the following librarian and employees to the library.
+
+Librarian: base pay = 4000.00, current sales = 10000.00, librarian bonus rate 0.5%
+Library employee: hourly rate = 10.50, current hours = 160, current sales = 500.00
+Library associate: hourly rate = 12.50, current hours = 138, commission rate = 2%, current sales = 15000
+Library associate: hourly rate = 14.50, current hours = 160, commission rate = 2%, current sales = 30000
+Library associate: hourly rate = 15.00, current hours = 160, commission rate = 3%, current sales = 45000
+Using this data the tests should verify the following values:
+
+Librarian pay = 4502.50
+Library employee pay = 1680.00
+Library associate #1 pay = 2025.00
+Library associate #2 pay = 2920.00
+Library associate #2 pay = 3750.00
+Library current sales = 100500.00
+Questions
+
+Answer the following questions and place in answer.txt The answer.txt file should be created in the project src directory.
+
+What are the fundamental difference between composition and inheritance?
+What is delegation and how is it related to wrapper classes.
+How is Java's interface inheritance similar to and different from multiple class inheritance?
+What to turn in
+
+Archive the project as a zip file.
+Submit this file below, per the assignment submission instructions.
