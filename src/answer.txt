@@ -1,0 +1,14 @@
+Answer the following questions and place in answer.txt The answer.txt file should be created in the 
+project src directory.
+
+What are the fundamental difference between composition and inheritance?
+Composition is a 'has-a' relationship and Inheritance is an 'is-a' relationship.
+
+What is delegation and how is it related to wrapper classes.
+A delegation class is one that is given the responsibility of implementing/executing a method of another class.
+A wrapper class gives all its work to a delegate but may add more functionality.
+
+How is Java's interface inheritance similar to and different from multiple class inheritance?
+Using interfaces and having a member variable of that interface type the class can utilize all of the same 
+behaviors but none of the implementation of those behaviors.  Using multiple class inheritence, the classes
+share the same implementation of the behaviors as well as the behavior interfaces (method/variable names)
