@@ -1,6 +1,6 @@
 package edu.washington.ext;
 
-import edu.washington.ext.common.Employee;
+import edu.washington.ext.Employee;
 
 // TODO: Auto-generated Javadoc
 /**
